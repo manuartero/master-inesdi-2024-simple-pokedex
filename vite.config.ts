@@ -5,10 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react({
-      // Only .tsx files
-      include: "**/*.tsx",
-    }),
+    react(),
     tsconfigPaths(),
   ],
   build: {
